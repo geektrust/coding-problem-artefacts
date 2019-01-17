@@ -17,15 +17,13 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
-                <!-- Please do not change the final artifact name-->
-        		<finalName>geektrust</finalName>
-				  <archive>
-					<manifest>
-						<!-- Jar file entry point insert your main class -->
-						<mainClass>{{this.is.your.qualified.name.of.main.class}}</mainClass>
-					</manifest>
-				  </archive>
-
+					<finalName>geektrust</finalName> <!-- Please do not change this final artifact name-->
+					<archive>
+						<manifest>
+							<!-- This is main class of your program which will be executed-->
+							<mainClass>{{this.is.your.qualified.name.of.main.class}}</mainClass>
+						</manifest>
+					</archive>
 				</configuration>
 			</plugin>
 

@@ -2,17 +2,17 @@ plugins {
     id 'java'
 }
 
-group = 'org.geektrust.problems'
+group = 'com.example'
 version = '1.0'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-// Please do not change the final artifact name
+
 jar {
-    baseName = 'geektrust'
+    archiveBaseName = 'geektrust' //Please do not change this final artifact name
     version =  null
     manifest {
-        attributes 'Main-Class' : '{{this.is.your.qualified.name.of.main.class}}'
+        attributes 'Main-Class' : 'com.example' //This is main class of your program which will be executed
     }
 }
 
