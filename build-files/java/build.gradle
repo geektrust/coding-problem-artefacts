@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.geektrust.problems'
+version = '1.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// Please do not change the final artifact name
+jar {
+    baseName = 'geektrust'
+    version =  null
+    manifest {
+        attributes 'Main-Class' : '{{this.is.your.qualified.name.of.main.class}}'
+    }
+}
+
+repositories {
+     mavenCentral()
+}
