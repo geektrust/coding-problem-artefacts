@@ -1,12 +1,12 @@
 ## Why these build files?
 
-Build files help in automating the execution and testing for the solution. When you are writing your solution in Java, we want you to add a build file to your solution, so that we can build, excute and test it.
+Build files help in automating the execution and testing for the solution. When you are writing your solution in Java, we want you to add a build file to your solution, so that we can build, execute and test it.
 
 For Java we support 2 build systems
 * [Maven](http://maven.apache.org/)
 * [Gradle](https://gradle.org/)
 
-If you are new to build systems and have not used Maven or Gradle before please read these articles to understand how to setup a Java project with:
+If you are new to build systems and have not used Maven or Gradle before, please read these articles to understand how to setup a Java project with:
 * [Maven - How to create a Java Project with Maven](https://www.mkyong.com/maven/how-to-create-a-java-project-with-maven/)
 * [Gradle - Building Java Application with Gradle](https://guides.gradle.org/building-java-applications/)
 
