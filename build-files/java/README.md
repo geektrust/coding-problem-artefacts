@@ -17,7 +17,7 @@ These articles are just guidelines to get you started. For Geektrust coding prob
 
 ### Maven pom.xml
 
-In the Maven `pom.xml` file we have provided a [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/) which is used to create a build jar file. Please do not edit the `finalName` (*geektrust* in this case) under its `configuration` section, and add the fully qualified name of your Main class file in the `mainClass` section under `manifest`. You can also edit the Group ID and the Artifact ID.
+In the Maven `pom.xml` file we have provided a [maven-assembly-plugin](https://maven.apache.org/plugins/maven-assembly-plugin/) which is used to create a single jar file, aggregated with its dependencies, modules, site documentation, and other files. Please do not edit the `finalName` (*geektrust* in this case) under its `configuration` section, and add the fully qualified name of your Main class file in the `mainClass` section under `manifest`. You can also edit the Group ID and the Artifact ID.
 
 For e.g if fully qualified name of your Main class in the project is `com.example.Main` then your `pom.xml` will look like this 
 ```
@@ -38,16 +38,31 @@ For e.g if fully qualified name of your Main class in the project is `com.exampl
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
+				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
-					<finalName>geektrust</finalName> <!-- Please do not change this final artifact name-->
+					<finalName>geektrust</finalName><!-- Please do not change this final artifact name-->
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<appendAssemblyId>false</appendAssemblyId>
 					<archive>
-					<manifest>
-						<!-- This is main class of your program which will be executed-->
-						<mainClass>com.example.Main</mainClass>
-					</manifest>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<!-- This is the main class of your program which will be executed-->
+							<mainClass>com.example.Main</mainClass>
+						</manifest>
 					</archive>
 				</configuration>
+
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 
 		</plugins>
@@ -57,7 +72,8 @@ For e.g if fully qualified name of your Main class in the project is `com.exampl
 
 ### Gradle build.gradle
 
-In the Gradle `build.gradle` file we have provided a [Gradle Jar Task](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html) which is used to create a build jar file. Please do not edit the `archiveBaseName` (*geektrust* in this case) under its `jar` section, and add the fully qualified name of your Main class file in the `attributes` section under `manifest`. You can also edit the Group ID.
+In the Gradle `build.gradle` file we have provided a [Gradle Jar Task](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html) which is used to create a build jar file. Please do not edit the `archiveBaseName` (*geektrust* in this case) under its `jar` section, and add the fully qualified name of your Main class file in the `attributes` section under `manifest`. You can also edit the Group ID. You can also add your dependecies if any to the 'dependencies' section. 
+The required gradle version is 5.1.
 
 For e.g if fully qualified name of your Main class in the project is `com.example.Main` then your `build.gradle` will look like this.
 
@@ -78,9 +94,23 @@ jar {
     manifest {
         attributes 'Main-Class' : 'com.example.Main' //This is main class of your program which will be executed
     }
+
+	// To create a single jar with all dependencies.
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    } {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
 }
 
 repositories {
      mavenCentral()
 }
+
+//Add your dependencies here
+dependencies {
+}
+
 ```
