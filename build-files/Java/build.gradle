@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+jar {
+    archiveBaseName = 'geektrust' //Please do not change this final artifact name
+    version =  null
+    manifest {
+        attributes 'Main-Class' : 'com.example.ExampleMain' //Change this to the main class of your program which will be executed
+    }
+    // To create a single jar with all dependencies.
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    } {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
+}
+
+repositories {
+     mavenCentral()
+}
+//Add your dependencies here
+dependencies {
+}
