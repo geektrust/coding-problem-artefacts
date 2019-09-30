@@ -1,0 +1,14 @@
+{
+    "name": "family-problem",
+    "version": "1.0.0",
+    "description": "Family Problem",
+    "main": "geektrust.js",
+    "scripts": {
+        "start": "node geektrust.js",
+        "test": "mocha"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "mocha": "^6.2.0"
+    }
+}
