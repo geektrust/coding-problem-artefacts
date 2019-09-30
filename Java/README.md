@@ -2,7 +2,7 @@
 
 If you are providing a solution without using the build file, we want you to name your `Main` class as `Geektrust.java`. This is the file that will contain your main method.
 
-This file should receive in the command line argument and parse the file passed in. Once the file is parsed and the application processes the commadns, it should only print the output.
+This file should receive in the command line argument and parse the file passed in. Once the file is parsed and the application processes the commands, it should only print the output.
 
 For e.g your `Geektrust.java` file will look like this
 
@@ -18,7 +18,7 @@ And you compile & run it with following commands
 
 ```
 javac <path_of_package>/Geektrust.java
-java <package>/Geektrust <path_to_input_file>
+java <package>/Geektrust <absolute_path_to_input_file>
 ```
 
 
@@ -94,7 +94,7 @@ For e.g if fully qualified name of your Main class in the project is `com.exampl
 
 ## Gradle build.gradle
 
-In the Gradle `build.gradle` file we have provided a [Gradle Jar Task](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html) which is used to create a build jar file. Please do not edit the `archiveBaseName` (*geektrust* in this case) under its `jar` section, and add the fully qualified name of your Main class file in the `attributes` section under `manifest`. You can also edit the Group ID. You can also add your dependecies if any to the 'dependencies' section. 
+In the Gradle `build.gradle` file we have provided a [Gradle Jar Task](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html) which is used to create a build jar file. Please do not edit the `archiveBaseName` (*geektrust* in this case) under its `jar` section, and add the fully qualified name of your Main class file in the `attributes` section under `manifest`. You can also edit the Group ID. You can also add your dependencies if any to the 'dependencies' section. 
 The required gradle version is 5.1.
 
 For e.g if fully qualified name of your Main class in the project is `com.example.Main` then your `build.gradle` will look like this.

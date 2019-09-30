@@ -12,10 +12,10 @@ You are also free to write code without any build file too, but that will affect
 
 ## Languages we support for Automated Code Correctness
 
-If you are solving the coding problem in any one of the languages given below, then follow the instructions from their respective ReadMe's by following the link.
+If you are solving the coding problem in any one of the languages given below, then follow the instructions from their respective ReadMe files by clicking on the link
 
 * [Java](Java/README.md)
-* [Python](Java/README.md)
+* [Python](Python/README.md)
 
 
 If you language of choice is not available in the list, please make sure:
