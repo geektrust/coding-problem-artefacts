@@ -1,4 +1,4 @@
-# coding-problem-artefacts
+# Coding Problem Artefacts
 
 This is a repository which includes the instructions and artefacts required for solving the Backend [Geektrust coding problems](https://www.geektrust.in/coding-problem). 
 
@@ -10,7 +10,7 @@ Build files help in automating the execution and testing for the solution. When 
 
 You are also free to write code without any build file too, but that will affect your evaluation.
 
-## Language we support for Automated Code Correctness
+## Languages we support for Automated Code Correctness
 
 If you are solving the coding problem in any one of the languages given below, then follow the instructions from their respective ReadMe's by following the link.
 
