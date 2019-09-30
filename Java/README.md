@@ -33,8 +33,8 @@ If you are new to build systems and have not used Maven or Gradle before, please
 * [Gradle - Building Java Application with Gradle](https://guides.gradle.org/building-java-applications/)
 
 These articles are just guidelines to get you started. For Geektrust coding problems you have to use the `pom.xml` and `build.gradle` files we provide. You will have to use one of them in your Java project depending on what build file you select. Please download the files from here.
-* [Maven -  pom.xml](https://raw.githubusercontent.com/geektrust/coding-problem-artefacts/master/build-files/java/pom.xml)
-* [Gradle - build.gradle](https://raw.githubusercontent.com/geektrust/coding-problem-artefacts/master/build-files/java/build.gradle)
+* [Maven -  pom.xml](https://raw.githubusercontent.com/geektrust/coding-problem-artefacts/master/Java/pom.xml)
+* [Gradle - build.gradle](https://raw.githubusercontent.com/geektrust/coding-problem-artefacts/master/Java/build.gradle)
 
 
 ## Maven pom.xml
@@ -144,12 +144,12 @@ For `Maven` run the following commands to compile & execute
 
 ```
 mvn clean install 
-java -jar <path_to>/geektrust.jar <path_to_input_file>
+java -jar <path_to>/geektrust.jar <absolute_path_to_input_file>
 ```
 
 For `Gradle` run the following commands to compile & execute
 
 ```
 gradle clean build
-java -jar <path_to/geektrust.jar <path_to_input_file>
+java -jar <path_to/geektrust.jar <absolute_path_to_input_file>
 ```

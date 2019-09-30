@@ -15,11 +15,12 @@ You are also free to write code without any build file too, but that will affect
 If you are solving the coding problem in any one of the languages given below, then follow the instructions from their respective ReadMe's by following the link.
 
 * [Java](Java/README.md)
+* [Python](Java/README.md)
 
 
 If you language of choice is not available in the list, please make sure:
 * Your application is a command line application.
-* Your main file to execute is named as geektrust.<fileext>
+* Your main file to execute is named as geektrust.<file ext>
 * It takes in a command line argument which is the location of the text file containing the commands that needs to be executed by your program.
 * After processing, it should print only the output related to each command in the file.
 
@@ -28,7 +29,7 @@ For e.g, if you re solving in **PHP**, and your input file is `/tmp/input1.txt` 
 ```php geektrust.php /tmp/input1.txt```
 
 
-If the input file passed in has these commands 
+For e.g , in case of family problem, if the input file passed in has these commands 
 
 ```
 ADD_CHILD Chitra Aria Female 
