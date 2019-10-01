@@ -18,8 +18,6 @@ main
 
 # Solution with Build files
 
-# Solution with Build files
-
-For Python we support only 1 build system
+For Ruby we support only 1 build system
 
 * [Rake](https://github.com/ruby/rake)

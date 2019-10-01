@@ -16,12 +16,13 @@ If you are solving the coding problem in any one of the languages given below, t
 
 * [Java](Java/README.md)
 * [Python](Python/README.md)
+* [C#](C#/README.md)
 * [NodeJS/JavaScript](NodeJS/README.md)
 
 
 If you language of choice is not available in the list, please make sure:
 * Your application is a command line application.
-* Your main file to execute is named as geektrust.<file ext>
+* Your main file to execute is named as `geektrust.<file ext>`
 * It takes in a command line argument which is the location of the text file containing the commands that needs to be executed by your program.
 * After processing, it should print only the output related to each command in the file.
 
