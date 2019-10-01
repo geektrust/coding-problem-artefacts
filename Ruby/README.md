@@ -28,7 +28,7 @@ For Ruby we support only 1 build system
 * [Rake](https://github.com/ruby/rake)
 
 
-Create a Rakefile with a `default` task like given in the [sample file](Rakefile). The rake file should import the main ruby file, which is the starting point of your application and the call the `main` method within the `default` task. Also create a Gemfile to add your dependencies, if any. The main file should read the file path from the `ARGV` variable and then execute the program. 
+Create a Rakefile with a `default` task like given in the [sample file](https://raw.githubusercontent.com/geektrust/coding-problem-artefacts/master/Ruby/Rakefile). The rake file should import the main ruby file, which is the starting point of your application and the call the `main` method within the `default` task. Also create a Gemfile to add your dependencies, if any. The main file should read the file path from the `ARGV` variable and then execute the program. 
 
 For e.g your `main.rb` file will look like this
 
