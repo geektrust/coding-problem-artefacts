@@ -16,7 +16,7 @@ If you are solving the coding problem in any one of the languages given below, t
 
 * [Java](Java/README.md)
 * [Python](Python/README.md)
-* [C#](C#/README.md)
+* [C#](CSharp/README.md)
 * [Ruby](Ruby/README.md)
 * [NodeJS/JavaScript](NodeJS/README.md)
 
