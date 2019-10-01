@@ -22,7 +22,7 @@ We then build and execute the solution by the following commands.
 
 ```
 dotnet build -o geektrust
-dotnet geektrust/geektrust.dll s<absolute_path_to_input_file>
+dotnet geektrust/geektrust.dll <absolute_path_to_input_file>
 ```
 
 Please refer [this sample application](https://github.com/geektrust/geektrust-csharp-family-demo) to know how a `C#` application will be checked for correctness.
