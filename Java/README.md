@@ -14,7 +14,7 @@ public static void main(String[] args)  {
 }
 ```
 
-And you compile & run it with following commands
+We build and run the solution by using the following commands
 
 ```
 javac <path_of_package>/Geektrust.java
@@ -136,7 +136,6 @@ dependencies {
 }
 
 ```
-
 
 ### Compile and Execution
 

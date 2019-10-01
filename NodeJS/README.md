@@ -14,17 +14,32 @@ const filename = process.argv[2];
 // print the output
 ```
 
+We will execute the program using the command 
+
+```
+node geektrust.js
+```
+
+
 # Solution with Build files
 
 For Node JS we support the following build system as of now
 
-* NPM(https://www.geeksforgeeks.org/node-js-npm-node-package-manager/)
+* [NPM](https://www.geeksforgeeks.org/node-js-npm-node-package-manager/)
 
 ## NPM
 
 NPM is the default package manager for NodeJS. NPM can install all the dependencies of a project through the package.json file. It can also update and uninstall packages. In the package.json file, each dependency can specify a range of valid versions using the semantic versioning scheme, allowing developers to auto-update their packages while at the same time avoiding unwanted breaking changes.
 
 A sample `package.json` file can be downloaded from [here](https://raw.githubusercontent.com/geektrust/coding-problem-artefacts/master/NodeJS/package.json)
+
+Make sure you have an entry for the start script which points to the execution of `geektrust.js`
+
+```javascript
+"scripts": {
+    "start": "node geektrust.js"
+}
+```
 
 ### Building and running the solution
 

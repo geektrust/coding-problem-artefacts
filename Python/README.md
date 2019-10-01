@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
 ```
 
-And you run it with following command
+We build and run the solution by using the following command.
 
 ```
 python -m geektrust <absolute_path_to_input_file>

@@ -16,7 +16,8 @@ end
 main
 ```
 
-This program can be executed with the command 
+We build and run the solution by using the following command.
+
 ```ruby
 ruby -W0 main.rb <absolute_path_to_input_file>
 ```
@@ -40,7 +41,7 @@ def main
 end
 ```
 
-The command to build and execute will be 
+We build and run the solution by using the following commands
 
 ```
 bundle install
