@@ -44,8 +44,20 @@ The tree above shows a workspace containing the code you write to solve any Geek
 import geektrust/subpackage1
 ```
 
+# Building and running the solution
 
-# Build & Execution
+This main file, `main.go` should receive in the command line argument and parse the file passed in. Once the file is parsed and the application processes the commands, it should only print the output.
+
+For e.g your `main.go` file will look like this
+
+```go
+func main() {
+	args := os.Args[1:] // absolute path to the teste file 
+	// parse the file and process the command
+	// print the output
+}
+
+```
 
 Once you have created your solution trying executing it by these commands from the directory `$GOPATH/src/geektrust`.
 
