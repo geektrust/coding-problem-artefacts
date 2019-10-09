@@ -5,7 +5,10 @@ We only support the management of dependencies via [Go Modules](https://blog.gol
 From the documentation:
 
 ```
-The go command resolves imports by using the specific dependency module versions listed in go.mod. When it encounters an import of a package not provided by any module in go.mod, the go command automatically looks up the module containing that package and adds it to go.mod, using the latest version.
+
+The go command resolves imports by using the specific dependency module versions listed in go.mod. 
+When it encounters an import of a package not provided by any module in go.mod, the go command automatically looks up the module containing that package and adds it to go.mod, using the latest version.
+
 ```
 
 So you just need to provide the `go.mod` file if you are using it.
@@ -35,9 +38,11 @@ src/
             subpackage1.go           # a file under that sub package
 ```
 
-The tree above shows a workspace containing the code you write to solve any Geektrust coding challenge in Go. The start file is `main.go` which may use `file_1.go` and the sub package `subpackage1`. The sub package will be imported by the files main.go and file_1.go with the help of base path `geektrust`. The import statement in this case will be
+The tree above shows a workspace containing the code you write to solve any Geektrust coding challenge in Go. The start file is `main.go` which may use `file_1.go` and the sub package `subpackage1`. The sub package will be imported by the files `main.go` and `file_1.go` with the help of base path `geektrust`. The import statement in this case will be
 
-```	import geektrust/subpackage1```
+```	
+import geektrust/subpackage1
+```
 
 
 # Build & Execution
