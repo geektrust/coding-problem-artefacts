@@ -7,10 +7,15 @@ This file should receive in the command line argument and parse the file passed 
 For e.g your `Geektrust.java` file will look like this
 
 ```java
-public static void main(String[] args)  {
-	String filePath = args[0];
-	//Parse the file and call your code
-	//Print the output
+public class Geektrust {
+
+	public static void main(String[] args)  {
+		String filePath = args[0];
+		//Parse the file and call your code
+		//Print the output
+	}
+....
+....
 }
 ```
 
@@ -39,7 +44,16 @@ These articles are just guidelines to get you started. For Geektrust coding prob
 
 ## Maven pom.xml
 
-In the Maven `pom.xml` file we have provided a [maven-assembly-plugin](https://maven.apache.org/plugins/maven-assembly-plugin/) which is used to create a single jar file, aggregated with its dependencies, modules, site documentation, and other files. Please do not edit the `finalName` (*geektrust* in this case) under its `configuration` section, and add the fully qualified name of your Main class file in the `mainClass` section under `manifest`. You can also edit the Group ID and the Artifact ID.
+In the Maven `pom.xml` file we have provided a [maven-assembly-plugin](https://maven.apache.org/plugins/maven-assembly-plugin/) which is used to create a single jar file, aggregated with its dependencies, modules, site documentation, and other files. Please do not edit the `finalName` (*geektrust* in this case) under its `configuration` section. Make sure the 'finalName' tag is inside the  maven-assembly-plugin configuration. This should generate an executable 'geektrust.jar' in the target folder.
+
+Add the fully qualified name of your Main class file in the `mainClass` section under `manifest`. You can also edit the Group ID and the Artifact ID.
+
+We build and run the solution by using the following command
+
+```
+java -jar geektrust.jar <path_to_input_file>
+
+```
 
 For e.g if fully qualified name of your Main class in the project is `com.example.Main` then your `pom.xml` will look like this 
 ```
@@ -62,7 +76,7 @@ For e.g if fully qualified name of your Main class in the project is `com.exampl
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
-					<finalName>geektrust</finalName><!-- Please do not change this final artifact name-->
+					<finalName>geektrust</finalName> <!-- Please do not change this final artifact name-->					
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
@@ -95,7 +109,14 @@ For e.g if fully qualified name of your Main class in the project is `com.exampl
 ## Gradle build.gradle
 
 In the Gradle `build.gradle` file we have provided a [Gradle Jar Task](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html) which is used to create a build jar file. Please do not edit the `archiveBaseName` (*geektrust* in this case) under its `jar` section, and add the fully qualified name of your Main class file in the `attributes` section under `manifest`. You can also edit the Group ID. You can also add your dependencies if any to the 'dependencies' section. 
-The required gradle version is 5.1.
+The required gradle version is 5.1. This should generate an executable 'geektrust.jar' in the build/libs folder.
+
+We build and run the solution by using the following command
+
+```
+java -jar geektrust.jar <path_to_input_file>
+
+```
 
 For e.g if fully qualified name of your Main class in the project is `com.example.Main` then your `build.gradle` will look like this.
 
