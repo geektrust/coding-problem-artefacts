@@ -19,7 +19,7 @@ main
 We build and run the solution by using the following command.
 
 ```ruby
-ruby -W0 main.rb <absolute_path_to_input_file>
+ruby -W0 geektrust.rb <absolute_path_to_input_file>
 ```
 
 # Solution with Build files
