@@ -23,7 +23,7 @@ We build and run the solution by using the following commands
 
 ```
 javac <path_of_package>/Geektrust.java
-java <package>/Geektrust <absolute_path_to_input_file>
+java <package>.Geektrust <absolute_path_to_input_file>
 ```
 
 
