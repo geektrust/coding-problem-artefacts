@@ -1,6 +1,6 @@
-We execute NodeJS, Standalone JavasScript under the Node/NPM execution environment.
+We execute NodeJS projects using Yarn/NPM execution environment. For Standalsone Javascript we use Node.js as runtime.
 
-In both cases your main file should be named as `geektrust.js`.
+In all cases your main file should be named as `geektrust.js`.
 
 # Solution without Build files
 
