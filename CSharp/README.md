@@ -16,7 +16,7 @@ Given below is a sample
 </Project>
 ```
 
-This will ensure that the `dll` file will created by the name `geektrust.dll`. 
+This will ensure that the `dll` file will be created by the name `geektrust.dll`. 
 
 We then build and execute the solution by the following commands.
 
