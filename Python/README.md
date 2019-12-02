@@ -9,6 +9,7 @@ For e.g your `geektrust.py` file will look like this
 ```python
 def main():
     input_file = sys.argv[1]
+    # sys.argv[1] should give the absolute path to the input file
     # parse the file and process the command
     # print the output
 
