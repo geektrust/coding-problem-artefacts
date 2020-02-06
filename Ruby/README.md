@@ -26,7 +26,7 @@ ruby -W0 geektrust.rb <absolute_path_to_input_file>
 
 * [Bundler](https://bundler.io/v2.0/man/bundle-install.1.html)
 * [Rake](https://github.com/ruby/rake)
-* [Bundler-Rake]
+* Bundler-Rake
 
 # Bundler
 Create a Gemfile to add your dependencies, if any. Name your `Main` file as `geektrust.rb`. This is the file that will contain your main method.
