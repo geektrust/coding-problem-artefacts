@@ -76,4 +76,4 @@ We recommend it this way, so that the executable can load any relative files tha
 
 Alternatively you can also test/run your application by running `go run main.go` from the directory `$GOPATH/src/geektrust`
 
-
+You need to initialise the family tree on program start. The command line argument file should only contain statements for modifying and verifying the family tree. Once this file is parsed and the application processes the commands, it should only print the output
