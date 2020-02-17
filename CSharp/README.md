@@ -27,6 +27,6 @@ dotnet geektrust/geektrust.dll <absolute_path_to_input_file>
 
 Please refer [this sample application](https://github.com/geektrust/geektrust-csharp-family-demo) to know how a `C#` application will be checked for correctness.
 
-**For FamilyTree**
+**For Meet the Family Problem**
 
 You need to initialise the family tree on program start. The command line argument file should only contain statements for modifying and verifying the family tree. Once this file is parsed and the application processes the commands, it should only print the output.
