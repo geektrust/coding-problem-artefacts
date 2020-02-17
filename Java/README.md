@@ -175,6 +175,6 @@ gradle clean build
 java -jar <path_to/geektrust.jar <absolute_path_to_input_file>
 ```
 
-** For Meet the Family Problem **
+## For Meet the Family Problem 
 
 You need to initialise the family tree on program start. The command line argument file should only contain statements for modifying and verifying the family tree.
