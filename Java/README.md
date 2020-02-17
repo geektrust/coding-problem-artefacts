@@ -2,7 +2,7 @@
 
 If you are providing a solution without using the build file, we want you to name your `Main` class as `Geektrust.java`. This is the file that will contain your main method.
 
-This file should receive in the command line argument and parse the file passed in. Once the file is parsed and the application processes the commands, it should only print the output. You need to initialise the family tree on program start. The command line argument file should only contain statements for modifying and verifying the family tree.
+This file should receive in the command line argument and parse the file passed in. Once the file is parsed and the application processes the commands, it should only print the output. 
 
 For e.g your `Geektrust.java` file will look like this
 
@@ -10,13 +10,9 @@ For e.g your `Geektrust.java` file will look like this
 public class Geektrust {
 
 	public static void main(String[] args)  {
-		initialiseFamilyTree();
 		String filePath = args[0];
 		//Parse the file and call your code
 		//Print the output
-	}
-	private static void initialiseFamilyTree(){
-		// Initialise the existing family tree
 	}
 ....
 ....
@@ -178,3 +174,7 @@ For `Gradle` run the following commands to compile & execute
 gradle clean build
 java -jar <path_to/geektrust.jar <absolute_path_to_input_file>
 ```
+
+** For Meet the Family Problem **
+
+You need to initialise the family tree on program start. The command line argument file should only contain statements for modifying and verifying the family tree.
