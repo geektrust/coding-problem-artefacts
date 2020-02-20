@@ -19,11 +19,11 @@ public class Geektrust {
 }
 ```
 
-We build and run the solution by using the following commands
+We build and run the solution by using the following commands. Make sure if your have any config files, its in the classpath.
 
 ```
 javac <path_of_package>/Geektrust.java
-java <package>.Geektrust <absolute_path_to_input_file>
+java -cp <code_path> <package>.Geektrust <absolute_path_to_input_file>
 ```
 
 
