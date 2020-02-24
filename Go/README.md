@@ -52,7 +52,7 @@ For e.g your `main.go` file will look like this
 
 ```go
 func main() {
-	args := os.Args[1:] // absolute path to the teste file 
+	args := os.Args[1:] // absolute path to the test file 
 	// parse the file and process the command
 	// print the output
 }
