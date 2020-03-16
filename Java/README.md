@@ -164,7 +164,7 @@ dependencies {
 For `Maven` run the following commands to compile & execute
 
 ```
-mvn clean install 
+mvn clean install -DskipTests -q assembly:single
 java -jar <path_to>/geektrust.jar <absolute_path_to_input_file>
 ```
 
