@@ -2,8 +2,6 @@
 
 This is a repository which includes the instructions and artefacts required for solving the Backend [Geektrust coding problems](https://www.geektrust.in/coding-problem). 
 
-We provide these instructions so that the checking of correctness of your solution can be automated. Trust us, one day you will be able to check the correctness of your code while submitting itself :)
-
 ## Why build files?
 
 Build files help in automating the execution and testing for the solution. When you are writing your solution in a programming language that supports build & dependency management, we want you to add a build file to your solution, so that we can build, execute and test it.
