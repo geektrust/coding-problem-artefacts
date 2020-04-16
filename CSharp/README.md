@@ -1,4 +1,4 @@
-We only support **.NET Core 2.2** for C# applications.
+We only support **.NET Core 2.2/3.1** for C# applications.
 
 The only requirement here is you should add an `AssemblyName` entry with the value `geektrust` in your `.csproj` file. 
 
