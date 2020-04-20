@@ -1,8 +1,10 @@
-We execute NodeJS projects using Yarn/NPM execution environment. For Standalone Javascript we use Node execution environment.
+Under the NodeJS runtime enviroment, we execute Javascript and [Typescript](#Typescript) code. 
+
+# Javascript
 
 In all cases your main file should be named as `geektrust.js`.
 
-# Solution without Build files
+## Solution without Build files
 
 This main file, `geektrust.js` should receive in the command line argument and parse the file passed in. Once the file is parsed and the application processes the commands, it should only print the output.
 
@@ -21,14 +23,14 @@ node geektrust.js
 ```
 
 
-# Solution with Build files
+## Solution with Build files
 
 For Node JS we support the following dependency/build system as of now
 
 * [NPM](https://www.geeksforgeeks.org/node-js-npm-node-package-manager/)
 * [Yarn](https://yarnpkg.com/lang/en/)
 
-## NPM
+### NPM
 
 NPM is the default package manager for NodeJS. NPM can install all the dependencies of a project through the package.json file. It can also update and uninstall packages. In the package.json file, each dependency can specify a range of valid versions using the semantic versioning scheme, allowing developers to auto-update their packages while at the same time avoiding unwanted breaking changes.
 
@@ -42,7 +44,7 @@ In your `package.json` file make sure you have an entry for the start script whi
 }
 ```
 
-### Building and running the solution
+#### Building and running the solution
 
 This main file, `geektrust.js` should receive in the command line argument and parse the file passed in. Once the file is parsed and the application processes the commands, it should only print the output.
 
@@ -62,7 +64,7 @@ npm start --silent <absolute_path_to_input_file>
 ```
 
 
-## Yarn
+### Yarn
 
 We also support yarn as a build tool if you want to use it. 
 
@@ -75,7 +77,7 @@ Your project should have the `package.json` file which handles all the dependenc
 ```
 
 
-### Building and running the solution
+#### Building and running the solution
 
 This main file, `geektrust.js` should receive in the command line argument and parse the file passed in. Once the file is parsed and the application processes the commands, it should only print the output.
 
@@ -93,3 +95,20 @@ We build and run the solution by using the following commands
 yarn install --silent
 yarn run --silent start <absolute_path_to_input_file>
 ```
+
+# Typescript
+
+Your main file should be named as `geektrust.ts`.
+
+As of now we only support Typescript under the NPM build system. This will require you to compile your typescript program into javascript. We run 2 commands `npm install --silent` and `npm start --silent`. Please ensure that the `npm install` commands creates the file `geektrust.js` from your `geektrust.ts` file. The `npm start` command should then execute this `geektrust.js` file. 
+
+In your `package.json` file make sure you have an entry for the install & start script. The `install` command  should install the depedencies and also build the `geektrust.js` file. The `start` command will execute the program.
+
+```javascript
+"scripts": {
+    "install" :"<command to create your geektrust.js file>"
+    "start": "node geektrust.js"
+}
+```
+
+Note: If you create the `geektrust.js` file in some other folder (like dist/, build/ or out/)other than the main folder, then please appropriately edit the `start` command. 
