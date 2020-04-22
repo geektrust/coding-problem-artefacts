@@ -1,4 +1,4 @@
-This document explains how we compile and execute your solution in NPM execution Environment. __You **MUST** only submit source code and it should not inculde the node_modules folder.__ 
+This document explains how we compile and execute your solution in NPM execution Environment. __You **MUST** only submit source code and it should not include the node_modules folder.__ 
 
 Under the NodeJS runtime enviroment, we execute Javascript and [Typescript](#Typescript) code. 
 
