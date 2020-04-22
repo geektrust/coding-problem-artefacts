@@ -1,3 +1,5 @@
+This document explains how we compile and execute your solution in Java. __You **MUST** only submit source code and not the JAR file.__ 
+
 # Solution without Build files
 
 If you are providing a solution without using the build file, we want you to name your `Main` class as `Geektrust.java`. This is the file that will contain your main method.

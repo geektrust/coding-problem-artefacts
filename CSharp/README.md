@@ -1,3 +1,5 @@
+This document explains how we compile and execute your solution in C#. __You **MUST** only submit source code and not the DLL/EXE file.__ 
+
 We only support **.NET Core 2.2/3.1** for C# applications.
 
 The only requirement here is you should add an `AssemblyName` entry with the value `geektrust` in your `.csproj` file. 

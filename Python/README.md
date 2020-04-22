@@ -1,4 +1,6 @@
-> We support only Python 3.x
+This document explains how we compile and execute your solution in Python. __You **MUST** only submit source code.__ 
+
+We support only versions 3.7 and 3.8 for Python solutions.
 
 # Solution without Build files
 

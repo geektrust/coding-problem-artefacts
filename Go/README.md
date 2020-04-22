@@ -1,3 +1,5 @@
+This document explains how we compile and execute your solution in Go. __You **MUST** only submit source code and not the executable file.__ 
+
 # Handling Dependencies
 
 We only support the management of dependencies via [Go Modules](https://blog.golang.org/using-go-modules)
