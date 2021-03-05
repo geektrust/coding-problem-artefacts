@@ -1,6 +1,7 @@
 # Coding Problem Artefacts
 
-This is a repository which includes the instructions and artefacts required for solving the Backend [Geektrust coding problems](https://www.geektrust.in/coding-problem). 
+This is a repository which includes the instructions and artefacts required for solving the Backend [Geektrust coding problems](https://www.geektrust.in/coding-problem). We expect your program to  take the location to the test file as parameter. Input needs to be read from a text file, and output should be printed to the
+console. The test file will contain only commands in the format prescribed by the respective problem. 
 
 ## Why build files?
 
