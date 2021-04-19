@@ -20,8 +20,9 @@ If you are solving the coding problem in any one of the languages given below, t
 * [Go](Go/README.md)
 * [NodeJS/JavaScript/Typescript](NodeJS/README.md)
 
+## Support for other languages
 
-Apart from these we also support Clojure, C++, Erlang, Groovy, Kotlin, PHP & Scala for our coding problems. However these do not have automated code correctness checks.  If you language of choice is one of these, please make sure:
+Apart from these we also support `Clojure`, `C++`, `Erlang`, `Groovy`, `Kotlin`, `PHP` & `Scala` for our coding problems. However these do not have automated code correctness checks.  If you language of choice is one of these, please make sure:
 * Your application is a command line application.
 * Your main file to execute is named as `geektrust.<file ext>`
 * It takes in a command line argument which is the location of the text file containing the commands that needs to be executed by your program.
