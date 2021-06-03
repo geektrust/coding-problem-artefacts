@@ -76,6 +76,12 @@ Execute the file from the directory `$GOPATH/src/geektrust` using the command
 
 We recommend it this way, so that the executable can load any relative files that you may be loading inside the application. 
 
-Alternatively you can also test/run your application by running `go run main.go` from the directory `$GOPATH/src/geektrust`
+### Ading unit tests
 
-You need to initialise the family tree on program start. The command line argument file should only contain statements for modifying and verifying the family tree. Once this file is parsed and the application processes the commands, it should only print the output
+We execute all the unit tests from the directory `$GOPATH/src/geektrust` by using the following command.
+
+```
+go test -c <package_name>
+``` 
+
+We iteratively execute this command in all test packages.

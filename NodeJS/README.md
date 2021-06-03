@@ -38,11 +38,15 @@ NPM is the default package manager for NodeJS. NPM can install all the dependenc
 
 A sample `package.json` file can be downloaded from [here](https://raw.githubusercontent.com/geektrust/coding-problem-artefacts/master/NodeJS/package.json)
 
-In your `package.json` file make sure you have an entry for the start script which points to the execution of `geektrust.js`
+In your `package.json` file make sure you have an entry for the following:
+
+1. Start script which points to the execution of `geektrust.js`
+2. Test script to execute all the unit tests present.
 
 ```javascript
 "scripts": {
-    "start": "node geektrust.js"
+    "start": "node geektrust.js",
+    "test": "mocha"
 }
 ```
 
@@ -63,6 +67,7 @@ We build and run the solution by using the following commands
 ```
 npm install --silent
 npm start --silent <absolute_path_to_input_file>
+npm test --silent
 ```
 
 
@@ -70,11 +75,12 @@ npm start --silent <absolute_path_to_input_file>
 
 We also support yarn as a build tool if you want to use it. 
 
-Your project should have the `package.json` file which handles all the dependencies. In that file make sure you have an entry for the start script which points to the execution of `geektrust.js`
+Your project should have the `package.json` file which handles all the dependencies. In that file make sure you have an entry for the start script which points to the execution of `geektrust.js` and a test script that executes all the unit tests present.
 
 ```javascript
 "scripts": {
-    "start": "node geektrust.js"
+    "start": "node geektrust.js",
+    "test": "mocha"
 }
 ```
 
@@ -96,20 +102,26 @@ We build and run the solution by using the following commands
 ```javascript
 yarn install --silent
 yarn run --silent start <absolute_path_to_input_file>
+yarn test --silent
 ```
 
 # Typescript
 
 Your main file should be named as `geektrust.ts`.
 
-As of now we only support Typescript under the NPM build system. This will require you to compile your typescript program into javascript. We run 2 commands `npm install --silent` and `npm start --silent`. Please ensure that the `npm install` commands creates the file `geektrust.js` from your `geektrust.ts` file. The `npm start` command should then execute this `geektrust.js` file. 
+As of now we only support Typescript under the NPM build system. This will require you to compile your typescript program into javascript. We run the commands `npm install --silent`, `npm start --silent` and `npm test --silent`. Please ensure that the `npm install` commands creates the file `geektrust.js` from your `geektrust.ts` file. The `npm start` command should then execute this `geektrust.js` file. 
 
-In your `package.json` file make sure you have an entry for the install & start script. The `install` command  should install the depedencies and also build the `geektrust.js` file. The `start` command will execute the program.
+In your `package.json` file make sure you have an entry for the install, start and test script. 
+
+1. The `install` command  should install the depedencies and also build the `geektrust.js` file. 
+2. The `start` command will execute the program.
+3. The `test` command should execute all the unit tests present
 
 ```javascript
 "scripts": {
-    "install" :"<command to create your geektrust.js file>"
-    "start": "node geektrust.js"
+    "install" :"<command to create your geektrust.js file>",
+    "start": "node geektrust.js",
+    "test": "mocha"
 }
 ```
 
