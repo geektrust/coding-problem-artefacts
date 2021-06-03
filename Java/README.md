@@ -177,7 +177,7 @@ gradle clean build
 java -jar <path_to/geektrust.jar <absolute_path_to_input_file>
 ```
 
-### Ading unit tests
+### Adding unit tests
 
 All unit tests written should be configured to be executed via the following test commands.
 

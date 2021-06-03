@@ -72,7 +72,7 @@ python -m geektrust <absolute_path_to_input_file>
 ```
 
 
-### Ading unit tests
+### Adding unit tests
 
 We execute the unit tests by using the following command
 

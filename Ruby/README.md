@@ -53,6 +53,13 @@ bundle install
 ruby -W0 geektrust.rb <absolute_path_to_input_file>
 ```
 
+### Adding unit tests
+
+We use the following command to execute unit tests
+
+```
+bundle exec rpec
+```
 
 # Rake
 Create a Rakefile with a `default` task like given in the [sample file](https://raw.githubusercontent.com/geektrust/coding-problem-artefacts/master/Ruby/Rakefile). The rake file should import the main ruby file, which is the starting point of your application and the call the `main` method within the `default` task.  The main file should read the file path from the `ARGV` variable and then execute the program. 
@@ -71,6 +78,14 @@ We build and run the solution by using the following command
 
 ```
 rake default <absolute_path_to_input_file>
+```
+
+### Adding unit tests
+
+We use the following command to execute unit tests
+
+```
+rake test
 ```
 
 
@@ -93,5 +108,13 @@ We build and run the solution by using the following commands
 ```
 bundle install
 rake default <absolute_path_to_input_file>
+```
+
+### Adding unit tests
+
+We use the following command to execute unit tests
+
+```
+bundle exec rpec
 ```
 

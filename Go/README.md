@@ -76,7 +76,7 @@ Execute the file from the directory `$GOPATH/src/geektrust` using the command
 
 We recommend it this way, so that the executable can load any relative files that you may be loading inside the application. 
 
-### Ading unit tests
+### Adding unit tests
 
 We execute all the unit tests from the directory `$GOPATH/src/geektrust` by using the following command.
 
