@@ -71,3 +71,11 @@ pip install -r requirements.txt
 python -m geektrust <absolute_path_to_input_file>
 ```
 
+
+### Adding unit tests
+
+We execute the unit tests by using the following command
+
+```
+python -m unittest discover
+```

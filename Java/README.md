@@ -176,3 +176,19 @@ For `Gradle` run the following commands to compile & execute
 gradle clean build
 java -jar <path_to/geektrust.jar <absolute_path_to_input_file>
 ```
+
+### Adding unit tests
+
+All unit tests written should be configured to be executed via the following test commands.
+
+For `Maven` run the follow command to execute unit tests
+
+```
+mvn clean test-compile
+```
+
+For `Gradle` run the following command to execute unit tests
+
+```
+gradle test
+```
