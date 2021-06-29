@@ -58,7 +58,7 @@ ruby -W0 geektrust.rb <absolute_path_to_input_file>
 We use the following command to execute unit tests
 
 ```
-bundle exec rpec
+bundle exec rspec
 ```
 
 # Rake
