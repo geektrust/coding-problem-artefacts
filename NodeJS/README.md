@@ -13,7 +13,7 @@ This main file, `geektrust.js` should receive in the command line argument and p
 For e.g your `geektrust.js` file will look like this
 
 ```javascript
-const filename = process.argv[2];
+const filepath = process.argv[2];
 // parse the file and process the command
 // print the output
 ```
@@ -57,7 +57,7 @@ This main file, `geektrust.js` should receive in the command line argument and p
 For e.g your `geektrust.js` file will look like this
 
 ```javascript
-const filename = process.argv[2];
+const filepath = process.argv[2];
 // parse the file and process the command
 // print the output
 ```
