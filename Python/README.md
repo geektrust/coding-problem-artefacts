@@ -13,13 +13,13 @@ This document covers following aspects of code evaluation for Python.
 
 We expect your program to take the location to the text file as parameter. Input needs to be read from a text file, and output should be printed to the console. The text file will contain only commands in the format prescribed by the respective problem.
 
-The main file should be named `geektrust.py`. To check your soluton we the execute the command 
+The main file should be named `geektrust.py`. To check your solution we the execute the command 
 ```
 python -m geektrust <absolute_path_to_input_file>
 ```
 
 # Build
-## Solution without Build files
+## No Build
 
 If you are providing a solution without using the build file, we want you to name your `Main` file as `geektrust.py`. This is the file that will contain your main method.
 
@@ -45,13 +45,9 @@ We build and run the solution by using the following command.
 python -m geektrust <absolute_path_to_input_file>
 ```
 
-## Solution with Build files
+## Pip
 
-For Python we support only 1 build system
-
-* [Pip](https://pip.pypa.io/en/stable/user_guide/)
-
-### Pip
+For Python we support only one build tool [Pip](https://pip.pypa.io/en/stable/user_guide/)
 
 Pip is package manager for Python. That means it’s a tool that allows you to install and manage additional libraries and dependencies that are not distributed as part of the standard library. 
 

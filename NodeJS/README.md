@@ -5,7 +5,7 @@ This document covers following aspects of code evaluation for NodeJS using the N
 * [Unit tests](#unit-tests)
 
 
-Under the NodeJS runtime enviroment, we execute Javascript and [Typescript](#Typescript) code. 
+Under the NodeJS runtime environment, we execute Javascript and [Typescript](#Typescript) code. 
 
 # Supported Versions
 
@@ -142,7 +142,7 @@ Please ensure that the `npm install` commands creates the file `geektrust.js` fr
 
 In your `package.json` file make sure you have an entry for the install, start and test script. 
 
-1. The `install` command  should install the depedencies and also build the `geektrust.js` file. 
+1. The `install` command  should install the dependencies and also build the `geektrust.js` file. 
 2. The `start` command will execute the program.
 3. The `test` command should execute all the unit tests present
 

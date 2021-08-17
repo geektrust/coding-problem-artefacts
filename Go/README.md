@@ -8,7 +8,7 @@ This document covers following aspects of code evaluation for Python.
 
 * 1.14.14
 * 1.15.7
-# Depedency Management
+# Dependency Management
 
 We only support the management of dependencies via [Go Modules](https://blog.golang.org/using-go-modules)
 
@@ -18,7 +18,7 @@ Every Go application can be built using the [go tool](https://golang.org/cmd/go/
 
 However we expect a few things from your package and directory structure
 
-# Package & Directory structure of your Go application
+## Package & Directory structure of your Go application
 
 All your code for one coding problem should reside inside a package named `geektrust` under your Go workspace, which is typically the `GOPATH`. The name of the package should be `geektrust` and **NOT** be anything else.
 
@@ -78,7 +78,7 @@ We recommend it this way, so that the executable can load any relative files tha
 
 # Unit tests
 
-The unit tests are ran and the coverage is calculated using the library [gotestsum](https://github.com/gotestyourself/gotestsum). This is independent of your solution and there is no need to add any dependency. However this will work only if you use Go Modules for dependency managment.
+The unit tests are ran and the coverage is calculated using the library [gotestsum](https://github.com/gotestyourself/gotestsum). This is independent of your solution and there is no need to add any dependency. However this will work only if you use Go Modules for dependency management.
 
 We execute the unit tests by running the following command from the directory `$GOPATH/src/geektrust` 
 

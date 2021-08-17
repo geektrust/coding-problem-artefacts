@@ -4,6 +4,11 @@ This document covers following aspects of code evaluation for Ruby.
 * [Correctness](#correctness)
 * [Unit tests](#unit-tests)
 
+# Supported Versions
+
+* 1.9.3
+* 2.2.10
+* 2.6.3
 # Build
 
 We support the use of these build tools for Ruby
@@ -28,7 +33,7 @@ end
 main
 ```
 
-We will install the dependencies and then buildthe solution by using the following command.
+We will install the dependencies and then build the solution by using the following command.
 
 ```ruby
 bundle install

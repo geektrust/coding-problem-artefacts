@@ -7,8 +7,8 @@ This document covers following aspects of code evaluation for Java.
 # Build
 
 For Java we support 2 build systems
-* [Maven](http://maven.apache.org/)
-* [Gradle](https://gradle.org/)
+* [Maven](http://maven.apache.org/) version 3.6.3
+* [Gradle](https://gradle.org/) version 5.1
 
 If you are new to build systems and have not used Maven or Gradle before, please read these articles to understand how to setup a Java project with:
 * [Maven - How to create a Java Project with Maven](https://www.mkyong.com/maven/how-to-create-a-java-project-with-maven/)
@@ -167,10 +167,7 @@ javac <path_of_package>/Geektrust.java
 java -cp <code_path> <package>.Geektrust <absolute_path_to_input_file>
 ```
 
-
-## Solution with Build files
-
-### Maven
+## Maven
 
 Once the `maven` command to build the solution is executed, then we run the following command to execute the code.
 
@@ -178,7 +175,7 @@ Once the `maven` command to build the solution is executed, then we run the foll
 java -jar <path_to>/geektrust.jar <absolute_path_to_input_file>
 ```
 
-### Gradle
+## Gradle
 
 Once the `gradle` command to build the solution is executed, then we run the following command to execute the code.
 
@@ -189,7 +186,7 @@ java -jar <path_to>/geektrust.jar <absolute_path_to_input_file>
 
 # Unit tests
 
-We support only JUnit as the library to execute unit tests. JUnit should be added as a dependency to the build tools we are supporting, if you are writing unit tests for your solution.
+We support only [JUnit](https://junit.org/junit5/) as the library to execute unit tests. JUnit should be added as a dependency to the build tool you are using, if you are writing unit tests for your solution.
 
 For checking the unit test coverage we use [JaCoCo](https://www.eclemma.org/jacoco/trunk/index.html) as a plugin in Maven and Gradle.
 

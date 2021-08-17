@@ -4,7 +4,6 @@ This document covers following aspects of code evaluation for C#.
 * [Correctness](#correctness)
 * [Unit tests](#unit-tests)
 
-
 # Supported Versions
 
 * 2.2
@@ -40,7 +39,7 @@ dotnet build -o geektrust
 
 We expect your program to take the location to the text file as parameter. Input needs to be read from a text file, and output should be printed to the console. The text file will contain only commands in the format prescribed by the respective problem.
 
-We then build and exeecute the solution by the following commands.
+We then build and execute the solution by the following commands.
 
 ```
 dotnet build -o geektrust
@@ -92,7 +91,4 @@ For calculating the coverage we run the command
 dotnet test --collect="XPlat Code Coverage"
 ```
 
-
-```
-
-Please refer [this sample application](https://github.com/geektrust/geektrust-csharp-family-demo) to know how a `C#` application will be checked for build, correctness & unit tests.
+_Note_: Please refer [this sample application](https://github.com/geektrust/geektrust-csharp-family-demo) to know how a `C#` application will be checked for build, correctness & unit tests.
