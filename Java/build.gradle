@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'jacoco'
 }
 
 group = 'com.example'
@@ -7,6 +8,19 @@ version = '1.0'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+jacoco { //Please do not change this
+    toolVersion = "0.8.4"
+    reportsDir = file("$buildDir/jacoco")
+}
+
+jacocoTestReport { //Please do not change this
+    reports {
+        xml.enabled true
+        csv.enabled false
+        html.enabled false
+        xml.destination file("./jacoco.xml")
+    }
+}
 
 jar {
     archiveBaseName = 'geektrust' //Please do not change this final artifact name
@@ -25,9 +39,28 @@ jar {
     }
 }
 
+test { ///Please do not change this
+    useJUnitPlatform()
+    testLogging {
+        events "PASSED", "SKIPPED", "FAILED", "STANDARD_ERROR"
+    }
+    finalizedBy jacocoTestReport // report is always generated after tests run
+    afterSuite { desc, result ->
+        if (!desc.parent)
+            println("${result.resultType} " +
+                "(${result.testCount} tests, " +
+                "${result.successfulTestCount} successes, " +
+                "${result.failedTestCount} failures, " +
+                "${result.skippedTestCount} skipped)")
+        }
+}
+
+
 repositories {
      mavenCentral()
 }
+
 //Add your dependencies here
 dependencies {
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version:'5.2.0'
 }

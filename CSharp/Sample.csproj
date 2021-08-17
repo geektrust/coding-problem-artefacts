@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>geektrust_family_demo</RootNamespace>
     <!-- Add a assembly name entry to your project and make sure it is geektrust-->
     <AssemblyName>geektrust</AssemblyName>

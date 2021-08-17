@@ -9,7 +9,19 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
+		<junit.jupiter.version>5.2.0</junit.jupiter.version>
+		<junit.platform.version>1.2.0</junit.platform.version>
 	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
 
 	<build>
 		<plugins>
@@ -41,8 +53,30 @@
 					</execution>
 				</executions>
 			</plugin>
-
-
+			<!-- Code coverage plugin. Use only if you are adding unit tests. Do not change any of the values in the entries below -->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.7</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+						<configuration>
+							<formats><format>XML</format></formats>
+							<outputDirectory>./</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>

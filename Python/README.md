@@ -1,8 +1,25 @@
-This document explains how we compile and execute your solution in Python. __You **MUST** only submit source code.__ 
+This document covers following aspects of code evaluation for Python. 
 
-We support only versions 3.7 and 3.8 for Python solutions.
+* [Correctness](#correctness)
+* [Build](#build)
+* [Unit tests](#unit-tests)
 
-# Solution without Build files
+# Supported Versions
+
+* 3.7
+* 3.8
+
+# Correctness
+
+We expect your program to take the location to the text file as parameter. Input needs to be read from a text file, and output should be printed to the console. The text file will contain only commands in the format prescribed by the respective problem.
+
+The main file should be named `geektrust.py`. To check your soluton we the execute the command 
+```
+python -m geektrust <absolute_path_to_input_file>
+```
+
+# Build
+## Solution without Build files
 
 If you are providing a solution without using the build file, we want you to name your `Main` file as `geektrust.py`. This is the file that will contain your main method.
 
@@ -28,13 +45,13 @@ We build and run the solution by using the following command.
 python -m geektrust <absolute_path_to_input_file>
 ```
 
-# Solution with Build files
+## Solution with Build files
 
 For Python we support only 1 build system
 
 * [Pip](https://pip.pypa.io/en/stable/user_guide/)
 
-## Pip
+### Pip
 
 Pip is package manager for Python. That means it’s a tool that allows you to install and manage additional libraries and dependencies that are not distributed as part of the standard library. 
 
@@ -72,10 +89,18 @@ python -m geektrust <absolute_path_to_input_file>
 ```
 
 
-### Adding unit tests
+# Unit tests
 
-We execute the unit tests by using the following command
+For Python we currently support only the inbuilt [unittest](https://docs.python.org/3/library/unittest.html) framework. For test coverage we use [Coverage](https://coverage.readthedocs.io/en/coverage-5.5/) framework. 
+
+The unit tests are checked by the command -
 
 ```
 python -m unittest discover
+```
+
+The unit test coverage is found by the command -
+
+```
+coverage run -m unittest discover
 ```

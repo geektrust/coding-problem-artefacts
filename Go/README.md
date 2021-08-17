@@ -1,21 +1,18 @@
-This document explains how we compile and execute your solution in Go. __You **MUST** only submit source code and not the executable file.__ 
+This document covers following aspects of code evaluation for Python. 
 
-# Handling Dependencies
+* [Build](#build)
+* [Correctness](#correctness)
+* [Unit tests](#unit-tests)
+
+# Supported Versions
+
+* 1.14.14
+* 1.15.7
+# Depedency Management
 
 We only support the management of dependencies via [Go Modules](https://blog.golang.org/using-go-modules)
 
-From the documentation:
-
-```
-
-The go command resolves imports by using the specific dependency module versions listed in go.mod. 
-When it encounters an import of a package not provided by any module in go.mod, the go command automatically looks up the module containing that package and adds it to go.mod, using the latest version.
-
-```
-
-So you just need to provide the `go.mod` file if you are using it.
-
-# Building Go applications
+# Build
 
 Every Go application can be built using the [go tool](https://golang.org/cmd/go/). It is the standard way to fetch, build, and install Go packages and commands. So we would be leveraging `go tool` for the same. The go tool requires you to organize your code in a specific way. Please read this [document](https://golang.org/doc/code.html) carefully. It explains the simplest way to get up and running with your Go installation.
 
@@ -46,7 +43,9 @@ The tree above shows a workspace containing the code you write to solve any Geek
 import geektrust/subpackage1
 ```
 
-# Building and running the solution
+# Correctness
+
+We expect your program to take the location to the text file as parameter. Input needs to be read from a text file, and output should be printed to the console. The text file will contain only commands in the format prescribed by the respective problem.
 
 This main file, `main.go` should receive in the command line argument and parse the file passed in. Once the file is parsed and the application processes the commands, it should only print the output.
 
@@ -76,12 +75,20 @@ Execute the file from the directory `$GOPATH/src/geektrust` using the command
 
 We recommend it this way, so that the executable can load any relative files that you may be loading inside the application. 
 
-### Adding unit tests
 
-We execute all the unit tests from the directory `$GOPATH/src/geektrust` by using the following command.
+# Unit tests
+
+The unit tests are ran and the coverage is calculated using the library [gotestsum](https://github.com/gotestyourself/gotestsum). This is independent of your solution and there is no need to add any dependency. However this will work only if you use Go Modules for dependency managment.
+
+We execute the unit tests by running the following command from the directory `$GOPATH/src/geektrust` 
 
 ```
-go test -c <package_name>
+gotestsum --hide-summary=all ./...
 ``` 
 
-We iteratively execute this command in all test packages.
+We check for the coverage of unit tests by executing the following command. from the directory `$GOPATH/src/geektrust`
+
+```
+gotestsum --hide-summary=all -- -coverprofile=cover.out ./...
+``` 
+
