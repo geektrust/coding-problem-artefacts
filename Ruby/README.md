@@ -14,7 +14,8 @@ This document covers following aspects of code evaluation for Ruby.
 We support the use of these build tools for Ruby
 
 * [Bundler](https://bundler.io/v2.0/man/bundle-install.1.html)
-* Bundler-[Rake](https://github.com/ruby/rake)
+* [Rake] (https://github.com/ruby/rake)
+* Bundler-Rake
 
 ## Bundler
 Create a Gemfile to add your dependencies, if any. Name your `Main` file as `geektrust.rb`. This is the file that will contain your main method.
@@ -37,6 +38,23 @@ We will install the dependencies and then build the solution by using the follow
 
 ```ruby
 bundle install
+```
+
+## Rake
+
+Create a Rakefile with a default task like given in the sample file. The rake file should import the main ruby file, which is the starting point of your application and the call the main method within the default task. The main file should read the file path from the ARGV variable and then execute the program.
+
+For e.g your main.rb file will look like this
+```
+def main
+    input_file = ARGV[1]
+    # parse the file and process the command
+    # print the output
+end
+```
+We build and run the solution by using the following command
+```
+rake default <absolute_path_to_input_file>
 ```
 ## Bundler-Rake
 
@@ -97,9 +115,16 @@ Once the `bundle install` command from the previous build process is complete, w
 ruby -W0 geektrust.rb <absolute_path_to_input_file>
 ```
 
-### Bundler-Rake
+### Rake
 
 Once the `bundle install` command from the previous build process is complete, we will execute the program using the command
+
+```ruby
+rake default <absolute_path_to_input_file>
+```
+### Bundler-Rake
+
+We will execute the program using the command
 
 ```ruby
 rake default <absolute_path_to_input_file>
@@ -122,6 +147,24 @@ We run the unit tests and calculate the coverage executing the command
 ```ruby
 rspec
 ```
+
+## Rake
+
+In your `Rakefile` add the `RSpec` task. 
+
+```
+RSpec::Core::RakeTask.new(:spec)
+```
+
+Please see the [sample file](https://raw.githubusercontent.com/geektrust/coding-problem-artefacts/master/Ruby/Rakefile) provided.
+
+
+We run the unit tests and calculate the coverage executing the command 
+
+```ruby
+rspec
+```
+
 ## Bundler-Rake
 
 We run the unit tests and calculate the coverage executing the command 
