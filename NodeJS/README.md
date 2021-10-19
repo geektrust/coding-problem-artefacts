@@ -42,7 +42,7 @@ In your `package.json` file make sure you have an entry for the following:
 We run the following command to build you solution.
 
 ```
-npm clean install --silent
+npm ci --silent
 ```
 
 ## Yarn
