@@ -104,7 +104,6 @@ targetCompatibility = 1.8
 jar {
     archiveBaseName = 'geektrust' //Please do not change this final artifact name
     version =  null               //Please do not change this final artifact version
-    archiveBaseVersion = null     //Please do not change this final artifact version
     manifest {
         attributes 'Main-Class' : 'com.example.Main' //This is main class of your program which will be executed
     }
