@@ -6,8 +6,8 @@ This document covers following aspects of code evaluation for Python.
 
 # Supported Versions
 
-* 3.7
 * 3.8
+* 3.9
 
 # Correctness
 
