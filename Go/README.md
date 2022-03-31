@@ -6,8 +6,10 @@ This document covers following aspects of code evaluation for Python.
 
 # Supported Versions
 
-* 1.14.14
 * 1.15.7
+* 1.16.8
+* 1.17
+
 # Dependency Management
 
 We only support the management of dependencies via [Go Modules](https://blog.golang.org/using-go-modules)
