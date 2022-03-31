@@ -4,6 +4,12 @@ This document covers following aspects of code evaluation for Java.
 * [Correctness](#correctness)
 * [Unit tests](#unit-tests)
 
+# Supported Versions
+
+* 1.8
+* 1.11
+* 1.15
+
 # Build
 
 For Java we support 2 build systems
