@@ -6,9 +6,8 @@ This document covers following aspects of code evaluation for Ruby.
 
 # Supported Versions
 
-* 1.9.3
-* 2.2.10
-* 2.6.3
+* 2.7.4
+* 3.0.2
 # Build
 
 We support the use of these build tools for Ruby
