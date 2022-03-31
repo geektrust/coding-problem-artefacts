@@ -9,9 +9,9 @@ Under the NodeJS runtime environment, we execute Javascript and [Typescript](#Ty
 
 # Supported Versions
 
-* 10.16.0
 * 12.6.0
 * 14.15.4
+* 16.10.0
 
 # Build
 
