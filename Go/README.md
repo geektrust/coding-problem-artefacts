@@ -1,4 +1,4 @@
-This document covers following aspects of code evaluation for Python. 
+This document covers following aspects of code evaluation for Golang. 
 
 * [Build](#build)
 * [Correctness](#correctness)
