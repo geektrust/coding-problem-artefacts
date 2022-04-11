@@ -292,7 +292,7 @@ repositories {
 
 //Add your dependencies here
 dependencies {
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version:'5.2.0'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version:'5.2.0'
 }
 ```
 
