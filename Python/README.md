@@ -100,3 +100,6 @@ The unit test coverage is found by the command -
 ```
 coverage run -m unittest discover
 ```
+
+## Starter Kit
+* [Python Pip](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/python-pip.zip)
