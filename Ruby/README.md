@@ -171,3 +171,8 @@ We run the unit tests and calculate the coverage executing the command
 ```ruby
 rspec
 ```
+
+## Starter Kit
+* [Rake](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/ruby-rake.zip)
+* [Bundler](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/ruby-bundler.zip)
+* [Bundler-Rake](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/ruby-bundler-rake.zip)
