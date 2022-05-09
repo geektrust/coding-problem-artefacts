@@ -89,6 +89,7 @@ We build the solution by using the following command
 mvn clean install -DskipTests -q assembly:single
 
 ```
+
 ## Gradle 
 
 In the Gradle `build.gradle` file we have provided a [Gradle Jar Task](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html) which is used to create a build jar file. Please do not edit the `archiveBaseName` (*geektrust* in this case) under its `jar` section, and add the fully qualified name of your Main class file in the `attributes` section under `manifest`. You can also edit the Group ID. You can also add your dependencies if any to the 'dependencies' section. 
@@ -327,3 +328,7 @@ We execute the unit tests using the command
 ```
 gradle clean test
 ```
+
+## Starter Kits
+* [Maven](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/java-maven.zip)
+* [Gradle](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/java-gradle.zip)
