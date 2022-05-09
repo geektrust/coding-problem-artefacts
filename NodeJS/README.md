@@ -155,3 +155,7 @@ In your `package.json` file make sure you have an entry for the install, start a
 ```
 
 Note: If you create the `geektrust.js` file in some other folder (like dist/, build/ or out/)other than the main folder, then please appropriately edit the `start` command. 
+
+## Starter Kits
+* [Npm](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/nodejs-npm.zip)
+* [Yarn](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/nodejs-yarn.zip)
