@@ -92,3 +92,6 @@ dotnet test --collect="XPlat Code Coverage"
 ```
 
 _Note_: Please refer [this sample application](https://github.com/geektrust/geektrust-csharp-family-demo) to know how a `C#` application will be checked for build, correctness & unit tests.
+
+## Starter Kit
+* [CSharp](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/csharp-dotnet.zip)
