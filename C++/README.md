@@ -25,8 +25,6 @@ int main(int argc, char *argv[]) {
 	//Print the output
 
     inputFile.close();
-    
-
     return 0;
 }
 ```
