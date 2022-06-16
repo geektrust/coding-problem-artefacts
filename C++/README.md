@@ -10,7 +10,7 @@ This document covers following aspects of code evaluation for C++.
 
 # Build
 
-Every C++ application that doesn't use any Windows/Mac OS specific libraries can be built using the [g++ compiler](https://gcc.gnu.org/) on a Linux/Unix enviroment. It is one of the most popular way to build C++ projects. So we would be leveraging `g++ compiler` for the same. 
+Every C++ application that doesn't use any Windows/Mac OS specific libraries can be built using the [g++ compiler](https://gcc.gnu.org/) on a Linux/Unix environment. It is one of the most popular way to build C++ projects. So we would be leveraging `g++ compiler` for the same. 
 
 We require that you name your `Main` file as `main.cpp`. The folder containing the `main.cpp` will be considered as the root of your project and all the `g++` commands to build out the final executable will be fired from there.
 
