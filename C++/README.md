@@ -15,7 +15,7 @@ This file should receive in the command line argument and parse the file passed 
 
 For e.g your main.cpp file will look like this
 
-```
+```c++
 int main(int argc, char *argv[]) {
     /*Sample code to read from file passed as command line argument*/
     string filename = argv[1];
