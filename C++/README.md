@@ -13,7 +13,7 @@ We want you to name your `Main` file as `main.cpp`. This is the file that will c
 
 This file should receive in the command line argument and parse the file passed in. Once the file is parsed and the application processes the commands, it should only print the output.
 
-For e.g your main.cpp file will look like this
+For e.g your `main.cpp` file will look like this
 
 ```c++
 int main(int argc, char *argv[]) {
@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     ifstream inputFile(filename);
 
     //Parse the file and call your code
-	//Print the output
+    //Print the output
 
     inputFile.close();
     return 0;
