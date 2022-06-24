@@ -49,4 +49,4 @@ g++ <file1>.cpp <file2>.cpp ... <filen>.cpp main.cpp -o geektrust
 2. Make your code OS agnostic, we will be building and running your code in Ubuntu Linux environment.
 
 ## Starter Kit
-* [CSharp Dotnet](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/csharp-dotnet.zip)
+* [C++ Dotnet](https://geektrust.s3.ap-southeast-1.amazonaws.com/starter-kit/cpp-none-starter-kit.zip)
