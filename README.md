@@ -18,6 +18,7 @@ If you are solving the coding problem in any one of the languages given below, t
 * [Ruby](Ruby/README.md)
 * [Go](Go/README.md)
 * [NodeJS/JavaScript/Typescript](NodeJS/README.md)
+* [C++](C++/README.md)
 
 
 ## Correctness
@@ -40,7 +41,7 @@ You are also free to write code without any build file too, but that will affect
 
 ## Support for other languages
 
-Apart from these we also support `Clojure`, `C++`, `Erlang`, `Groovy`, `Kotlin`, `PHP` & `Scala` for our coding problems. However these do not have automated code correctness checks.  If you language of choice is one of these, please make sure:
+Apart from these we also support `Clojure`, `Erlang`, `Groovy`, `Kotlin`, `PHP` & `Scala` for our coding problems. However these do not have automated code correctness checks.  If you language of choice is one of these, please make sure:
 
 * Your application is a command line application.
 * Your main file to execute is named as `geektrust.<file ext>`
