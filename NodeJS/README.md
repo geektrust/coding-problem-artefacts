@@ -132,6 +132,10 @@ jest
 
 # Typescript
 
+**Please note that we DO NOT support TypeScript for Automated Code Evaluation for parameters Object Modeling and Readability. That will be manually reviewd by our team. These instructions are only to get check the correctness and build parameters of the code.** 
+
+## Instructions for checking Correctness/Build
+
 Your main file should be named as `geektrust.ts`.
 
 As of now we only support Typescript under the NPM build system. This will require you to compile your typescript program into javascript. 
